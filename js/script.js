@@ -386,8 +386,6 @@ function initSwiper() {
     })
 }
 
-
-
 async function searchAPIData(endpoint) {
     const API_KEY = global.api.apiKey;
     const API_URL =  global.api.apiURL;
@@ -402,7 +400,6 @@ async function searchAPIData(endpoint) {
     hideSpinner()
     return data 
 }
-
 
 
 async function fetchAPIData(endpoint) {
@@ -428,15 +425,6 @@ function showSpinner() {
 function hideSpinner() {
     document.querySelector('.spinner').classList.remove('show')
 }
-
-
-
-
-
-
-
-
-
 
 
 //highlight active link
@@ -466,9 +454,6 @@ function addCommasToNumber(number) {
 }
 
 
-
-
-
 // init app
 function init() {
     switch (global.currentPage) {
@@ -493,7 +478,5 @@ function init() {
 
     highlightActiveLink()
 }
-
-
 
 document.addEventListener("DOMContentLoaded", init)
